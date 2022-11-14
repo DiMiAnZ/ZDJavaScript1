@@ -57,17 +57,75 @@ function ulli(arguments){
         <li>${arguments}</li>
         <li>${arguments}</li>
         <li>${arguments}</li>
-</ul>`);
+    </ul>`);
 }
 ulli('Lorem ipsum dolor sit amet');
 
+// SECOND VARIANT
+
+function ulli2(tex){
+    document.write(`<ul>`);
+        document.write(`<li>${tex}</li>
+        <li>${tex}</li>
+        <li>${tex}</li>`);
+    document.write(`</ul>`);
+}
+ulli2('Lorem');
+
 //=====================================================================================================================
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий.Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
+function ulli3(text, counter) {
+    document.write(`<ul>`);
+    for (let i = 0; i < counter; i++) {
+        document.write(`<li>${text}</li>`);
+    };
+    document.write(`</ul>`);
+}
 
+ulli3('fdjyf', 3);
 //=====================================================================================================================
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
+function listArr(xxx){
+    for (const xx of xxx) {
+        document.write(`<li>${xx}</li>`);
+    }
+}
+let gg = [23,64,'gfg',false,43,true];
+listArr(gg);
 
+//===================================================================================================================
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
+function klients(people) {
+    for (const person of people) {
+        document.write(`<div>${person.id} ${person.name} ${person.age}</div>`);
+        document.write(`=========`)
+    }
+
+}
+let vvv = [
+    {id: 1, name: 'vasya', age: 31},
+    {id: 2,name: 'petya', age: 30},
+    {id: 3,name: 'kolya', age: 29},
+    {id: 4,name: 'olya', age: 28}
+];
+klients(vvv);
+
+//=====================================================================================================================
 // - створити функцію яка повертає найменьше число з масиву
+
+function ssss(arrMin){
+    return[Math.min(...arrMin)];
+}
+console.log(ssss([1,2,3,4,5]));
+
+//=====================================================================================================================
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
+
+function clozenije(Sdt){
+    let sum = [];
+    for (let i = 0; i < Sdt.length; i++) {
+    return sum += Sdt[i];
+    }
+}
+console.log(clozenije([1,2,3]));
 
