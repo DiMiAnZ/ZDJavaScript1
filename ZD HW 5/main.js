@@ -1,30 +1,30 @@
 // - створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
-function SqRec(a,b){
+function sqRec(a,b){
     return a * b;
 }
-let S = SqRec(4,6);
-console.log(S)
+let s = sqRec(4,6);
+console.log(s)
 
 //=================================================================================================================
 // - створити функцію яка обчислює та повертає площу кола з радіусом r
-function Sqcir(r){
+function sqcir(r){
     return Math.PI*(r*r);
 }
-let Scir = Sqcir(5);
-console.log(Scir)
+let scir = sqcir(5);
+console.log(scir)
 
 //===================================================================================================================
 // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіуcом r
-function Sqcyl(H,R){
+function sqcyl(H,R){
     return (2*Math.PI*R)*(R+H);
 }
-let Scyl = Sqcyl(5,2);
-console.log(Scyl)
+let scyl = sqcyl(5,2);
+console.log(scyl)
 
 //====================================================================================================================
 // - створити функцію яка приймає масив та виводить кожен його елемент
-function LIST(US){
-    for (const u of US) {
+function list(us){
+    for (const u of us) {
         console.log(u);
     }
 }
@@ -41,22 +41,22 @@ let users = [
     {name: 'olya', age: 31, status: false},
     {name: 'max', age: 31, status: true}
 ];
-LIST(users);
+list(users);
 
 //=====================================================================================================================
 // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
-function Paragraf(arguments){
-    document.write(`<p>${arguments}</p>`);
+function paragraf(arg){
+    document.write(`<p>${arg}</p>`);
 }
-Paragraf('Lorem ipsum dolor sit amet, consectetur adipisicing elit');
+paragraf('Lorem ipsum dolor sit amet, consectetur adipisicing elit');
 
 //=====================================================================================================================
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
-function ulli(arguments){
+function ulli(argu){
     document.write(`<ul>
-        <li>${arguments}</li>
-        <li>${arguments}</li>
-        <li>${arguments}</li>
+        <li>${argu}</li>
+        <li>${argu}</li>
+        <li>${argu}</li>
     </ul>`);
 }
 ulli('Lorem ipsum dolor sit amet');
@@ -78,7 +78,7 @@ function ulli3(text, counter) {
     document.write(`<ul>`);
     for (let i = 0; i < counter; i++) {
         document.write(`<li>${text}</li>`);
-    };
+    }
     document.write(`</ul>`);
 }
 
@@ -86,9 +86,11 @@ ulli3('fdjyf', 3);
 //=====================================================================================================================
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
 function listArr(xxx){
+    document.write(`<ul>`);
     for (const xx of xxx) {
         document.write(`<li>${xx}</li>`);
     }
+    document.write(`</ul>`);
 }
 let gg = [23,64,'gfg',false,43,true];
 listArr(gg);
@@ -118,14 +120,29 @@ function ssss(arrMin){
 }
 console.log(ssss([1,2,3,4,5]));
 
+// вариант через FOR, и выводит число а не массив
+
+function minChislo(mc) {
+    let minimum = mc[0];
+    for (const item of mc) {
+        if (item < minimum) {
+            minimum = item;
+        }
+    }
+    return minimum;
+}
+console.log(minChislo([44, 4, 5, 88, 10, 9, 20]));
+
+
 //=====================================================================================================================
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
 
-function clozenije(Sdt){
-    let sum = [];
-    for (let i = 0; i < Sdt.length; i++) {
-    return sum += Sdt[i];
-    }
-}
-console.log(clozenije([1,2,3]));
+function summacisel(scisel){
+    let su = 0;
+    for (const item of scisel) {
+        su += item;
 
+    }
+    return su;
+}
+console.log(summacisel([1, 2, 3, 3]));
