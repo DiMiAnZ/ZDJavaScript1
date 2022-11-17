@@ -1,148 +1,366 @@
 // - створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
-function sqRec(a,b){
-    return a * b;
-}
-let s = sqRec(4,6);
-console.log(s)
+// function sqRec(a,b){
+//     return a * b;
+// }
+// let s = sqRec(4,6);
+// console.log(s)
 
 //=================================================================================================================
 // - створити функцію яка обчислює та повертає площу кола з радіусом r
-function sqcir(r){
-    return Math.PI*(r*r);
-}
-let scir = sqcir(5);
-console.log(scir)
+// function sqcir(r){
+//     return Math.PI*(r*r);
+// }
+// let scir = sqcir(5);
+// console.log(scir)
 
 //===================================================================================================================
 // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіуcом r
-function sqcyl(H,R){
-    return (2*Math.PI*R)*(R+H);
-}
-let scyl = sqcyl(5,2);
-console.log(scyl)
+// function sqcyl(H,R){
+//     return (2*Math.PI*R)*(R+H);
+// }
+// let scyl = sqcyl(5,2);
+// console.log(scyl)
 
 //====================================================================================================================
 // - створити функцію яка приймає масив та виводить кожен його елемент
-function list(us){
-    for (const u of us) {
-        console.log(u);
-    }
-}
-let users = [
-    {name: 'vasya', age: 31, status: false},
-    {name: 'petya', age: 30, status: true},
-    {name: 'kolya', age: 29, status: true},
-    {name: 'olya', age: 28, status: false},
-    {name: 'max', age: 30, status: true},
-    {name: 'anya', age: 31, status: false},
-    {name: 'oleg', age: 28, status: false},
-    {name: 'andrey', age: 29, status: true},
-    {name: 'masha', age: 30, status: true},
-    {name: 'olya', age: 31, status: false},
-    {name: 'max', age: 31, status: true}
-];
-list(users);
+// function list(us){
+//     for (const u of us) {
+//         console.log(u);
+//     }
+// }
+// let users = [
+//     {name: 'vasya', age: 31, status: false},
+//     {name: 'petya', age: 30, status: true},
+//     {name: 'kolya', age: 29, status: true},
+//     {name: 'olya', age: 28, status: false},
+//     {name: 'max', age: 30, status: true},
+//     {name: 'anya', age: 31, status: false},
+//     {name: 'oleg', age: 28, status: false},
+//     {name: 'andrey', age: 29, status: true},
+//     {name: 'masha', age: 30, status: true},
+//     {name: 'olya', age: 31, status: false},
+//     {name: 'max', age: 31, status: true}
+// ];
+// list(users);
 
 //=====================================================================================================================
 // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
-function paragraf(arg){
-    document.write(`<p>${arg}</p>`);
-}
-paragraf('Lorem ipsum dolor sit amet, consectetur adipisicing elit');
+// function paragraf(arg){
+//     document.write(`<p>${arg}</p>`);
+// }
+// paragraf('Lorem ipsum dolor sit amet, consectetur adipisicing elit');
 
 //=====================================================================================================================
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
-function ulli(argu){
-    document.write(`<ul>
-        <li>${argu}</li>
-        <li>${argu}</li>
-        <li>${argu}</li>
-    </ul>`);
-}
-ulli('Lorem ipsum dolor sit amet');
+// function ulli(argu){
+//     document.write(`<ul>
+//         <li>${argu}</li>
+//         <li>${argu}</li>
+//         <li>${argu}</li>
+//     </ul>`);
+// }
+// ulli('Lorem ipsum dolor sit amet');
 
-// SECOND VARIANT
+// SECOND VARIANT============================================
 
-function ulli2(tex){
-    document.write(`<ul>`);
-        document.write(`<li>${tex}</li>
-        <li>${tex}</li>
-        <li>${tex}</li>`);
-    document.write(`</ul>`);
-}
-ulli2('Lorem');
+// function ulli2(tex){
+//     document.write(`<ul>`);
+//         document.write(`<li>${tex}</li>
+//         <li>${tex}</li>
+//         <li>${tex}</li>`);
+//     document.write(`</ul>`);
+// }
+// ulli2('Lorem');
 
 //=====================================================================================================================
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий.Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
-function ulli3(text, counter) {
-    document.write(`<ul>`);
-    for (let i = 0; i < counter; i++) {
-        document.write(`<li>${text}</li>`);
-    }
-    document.write(`</ul>`);
-}
-
-ulli3('fdjyf', 3);
+// function ulli3(text, counter) {
+//     document.write(`<ul>`);
+//     for (let i = 0; i < counter; i++) {
+//         document.write(`<li>${text}</li>`);
+//     }
+//     document.write(`</ul>`);
+// }
+//
+// ulli3('fdjyf', 3);
 //=====================================================================================================================
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
-function listArr(xxx){
-    document.write(`<ul>`);
-    for (const xx of xxx) {
-        document.write(`<li>${xx}</li>`);
-    }
-    document.write(`</ul>`);
-}
-let gg = [23,64,'gfg',false,43,true];
-listArr(gg);
+// function listArr(xxx){
+//     document.write(`<ul>`);
+//     for (const xx of xxx) {
+//         document.write(`<li>${xx}</li>`);
+//     }
+//     document.write(`</ul>`);
+// }
+// let gg = [23,64,'gfg',false,43,true];
+// listArr(gg);
 
 //===================================================================================================================
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
-function klients(people) {
-    for (const person of people) {
-        document.write(`<div>${person.id} ${person.name} ${person.age}</div>`);
-        document.write(`=========`)
-    }
-
-}
-let vvv = [
-    {id: 1, name: 'vasya', age: 31},
-    {id: 2,name: 'petya', age: 30},
-    {id: 3,name: 'kolya', age: 29},
-    {id: 4,name: 'olya', age: 28}
-];
-klients(vvv);
+// function klients(people) {
+//     for (const person of people) {
+//         document.write(`<div>${person.id} ${person.name} ${person.age}</div>`);
+//         document.write(`=========`)
+//     }
+//
+// }
+// let vvv = [
+//     {id: 1, name: 'vasya', age: 31},
+//     {id: 2,name: 'petya', age: 30},
+//     {id: 3,name: 'kolya', age: 29},
+//     {id: 4,name: 'olya', age: 28}
+// ];
+// klients(vvv);
 
 //=====================================================================================================================
 // - створити функцію яка повертає найменьше число з масиву
 
-function ssss(arrMin){
-    return[Math.min(...arrMin)];
-}
-console.log(ssss([1,2,3,4,5]));
-
-// вариант через FOR, и выводит число а не массив
-
-function minChislo(mc) {
-    let minimum = mc[0];
-    for (const item of mc) {
-        if (item < minimum) {
-            minimum = item;
-        }
-    }
-    return minimum;
-}
-console.log(minChislo([44, 4, 5, 88, 10, 9, 20]));
+// function ssss(arrMin){
+//     return[Math.min(...arrMin)];
+// }
+// console.log(ssss([1,2,3,4,5]));
+//
+// // вариант через FOR, и выводит число а не массив
+//
+// function minChislo(mc) {
+//     let minimum = mc[0];
+//     for (const item of mc) {
+//         if (item < minimum) {
+//             minimum = item;
+//         }
+//     }
+//     return minimum;
+// }
+// console.log(minChislo([44, 4, 5, 88, 10, 9, 20]));
 
 
 //=====================================================================================================================
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
 
-function summacisel(scisel){
-    let su = 0;
-    for (const item of scisel) {
-        su += item;
+// function summacisel(scisel){
+//     let su = 0;
+//     for (const item of scisel) {
+//         su += item;
+//
+//     }
+//     return su;
+// }
+// console.log(summacisel([1, 2, 3, 3]));
 
-    }
-    return su;
-}
-console.log(summacisel([1, 2, 3, 3]));
+//=====================================================================================================================
+//===========================================ADITIONAL TASKS===========================================================
+//=====================================================================================================================
+
+// - створити функцію яка приймає три числа та виводить найменьше. (Без Math.min!)
+
+// function foo(a, b, c) {
+//     if (a > b && b < c) {
+//         console.log(b);
+//     } else if (b > a && a < c) {
+//         console.log(a);
+//     } else if (b > c && c < a) {
+//         console.log(c);
+//     } else {
+//         console.log('Error');
+//     }
+// }
+// foo(1,2,3);
+
+//=====================================================================================================================
+// - створити функцію яка приймає три числа та виводить найбільше. (Без Math.max!)
+
+// function foo(a, b, c) {
+//     if (a > b && a > c) {
+//         console.log(a);
+//     } else if (b > a && b > c) {
+//         console.log(b);
+//     } else if (c > a && c > b) {
+//         console.log(c);
+//     } else {
+//         console.log('Error');
+//     }
+// }
+// foo(1,2,3);
+
+//=====================================================================================================================
+// - створити функцію яка повертає найбільше число з масиву
+
+// const arr = [1,2,33,12,4];
+// const max = (array) => {
+//     let max = array[0];
+//     for (const item of array) {
+//         if (item > max) {
+//             max = item;
+//         }
+//     }
+//     return max;
+// }
+// console.log(max(arr));
+
+//=====================================================================================================================
+// - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
+
+// const arr = [1,2,3];
+//
+// function foo(array) {
+//     let sum = 0;
+//     for (const item of array) {
+//         sum += item;
+//     }
+//     return sum/array.length;
+// }
+//
+// console.log(foo(arr));
+
+//=====================================================================================================================
+// - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати
+// заборонено);
+
+// function foo(...arguments) {
+//     let min = arguments[0];
+//     let max = arguments[0];
+//     for (const item of arguments) {
+//         if (item > max) {
+//             max = item;
+//         }
+//         if (item < min) {
+//             min = item;
+//         }
+//     }
+//     console.log(max);
+//     return min;
+// }
+// let foo1 = foo(1,2,3,4,5,6,7);
+// console.log(foo1);
+
+// SECOND VARIANT============================================
+
+// function qqq(arry){
+//     let min = arry[0];
+//     let max = arry[0];
+//     for (const item of arry) {
+//         if (item < min){
+//             min = item;
+//         }
+//         if (item > max){
+//             max = item;
+//         }
+//
+//     }
+//     console.log(max);
+//     return min;
+// }
+// console.log(qqq([2,3,4,7,1,9]));
+//=====================================================================================================================
+// - створити функцію яка заповнює масив рандомними числами
+// (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
+
+// let arr = [];
+// function foo() {
+//     for (let i = 0; i < 5; i++) {
+//         arr[i] = Math.floor(Math.random() * 1000);
+//     }
+//     console.log(arr);
+// }
+// foo();
+
+//=====================================================================================================================
+// - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує
+// кінцеве значення діапазону.
+
+// let arr = [];
+// function foo(kolvochisel, limit) {
+//     for (let i = 0; i < kolvochisel; i++) {
+//         arr[i] = Math.floor(Math.random() * limit);
+//     }
+//     console.log(arr);
+// }
+// foo(7,76);
+
+//=====================================================================================================================
+// - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
+
+// const arr = [1,2,3];
+// function foo(array) {
+//     let newArray = [];
+//     for (let i = array.length - 1, j = 0; i >= 0;) {
+//         newArray[j++] = array[ i--];
+//     }
+//     return newArray;
+// }
+//
+// console.log(foo(arr));
+
+//=====================================================================================================================
+// - створити функцію, яка якщо приймає один аргумент, просто вивдоить його, якщо два аргументи - складає або конкатенує
+// їх між собою.
+
+// const foo = (...arguments) => arguments.length === 2 ? arguments[0] + arguments[1] : arguments[0];
+// let foo1 = foo('q');
+// console.log(foo1);
+
+//=====================================================================================================================
+// - створити функцію  яка приймає два масиви та скаладає значення елементів з однаковими індексами  та повертає новий
+// результуючий масив.
+//     EXAMPLE:
+// [1,2,3,4]
+//     [2,3,4,5]
+// результат
+//     [3,5,7,9]
+
+// const arr1 = [1,2,3,4];
+// const arr2 = [1,2,3,4,5];
+// function foo(array1,array2) {
+//     let res = [];
+//     let xxx = array1.length >= array2.length ? array1 : array2;
+//     for (let i = 0; i < xxx.length; i++) {
+//         res[i] = (array1[i] || 0) + (array2[i] || 0);
+//     }
+//     return res;
+// }
+//
+// console.log(foo(arr1, arr2));
+
+//=====================================================================================================================
+// - Створити функцію яка приймає масив будь яких объектів, та повертає масив ключів всіх обєктів
+// EXAMPLE:
+//     [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ name, age, model ]
+
+// const arr = [
+//     {name: 'Dima', age: 13},
+//     {model: 'Camry'}
+// ]
+//
+// function foo(array) {
+//     let newArray = [];
+//     for (let i = 0, j = 0; i < array.length; i++) {
+//         for (const key in array[i]) {
+//             newArray[j++] = key;
+//         }
+//     }
+//     return newArray;
+// }
+//
+// console.log(foo(arr));
+
+//=====================================================================================================================
+//     - Створити функцію яка приймає масив будь яких объектів, та повертає масив значень всіх обєктів
+// EXAMPLE:
+//     [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ Dima, 13, Camry ]
+
+// const arr = [
+//     {name: 'Dima', age: 13},
+//     {model: 'Camry'}
+// ]
+//
+// function foo(array) {
+//     let newArray = [];
+//     for (let i = 0, j = 0; i < array.length; i++) {
+//         for (const key in array[i]) {
+//             newArray[j++] = array[i][key];
+//         }
+//     }
+//     return newArray;
+// }
+//
+// console.log(foo(arr));
