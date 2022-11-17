@@ -296,7 +296,7 @@
 // їх між собою.
 
 // const foo = (...arguments) => arguments.length === 2 ? arguments[0] + arguments[1] : arguments[0];
-// let foo1 = foo('q');
+// let foo1 = foo(3);
 // console.log(foo1);
 
 //=====================================================================================================================
