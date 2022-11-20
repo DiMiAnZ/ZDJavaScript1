@@ -1,12 +1,40 @@
 //===========================================================================================================
 // - Знайти та вивести довижину настипних стрінгових значень
 // 'hello world', 'lorem ipsum', 'javascript is cool'
+
+// let str = ('hello world');
+// let str1 = ('lorem ipsum');
+// let str2 = ('javascript is cool');
+// let str3 = ('hello world, lorem ipsum, javascript is cool');
+// console.log(str.length);
+// console.log(str1.length);
+// console.log(str2.length);
+// console.log(str3.length);
+
 //===========================================================================================================
 // - Перевести до великого регістру наступні стрінгові значення
 // 'hello world', 'lorem ipsum', 'javascript is cool'
+
+// let str = ('hello world');
+// let str1 = ('lorem ipsum');
+// let str2 = ('javascript is cool');
+// let str3 = ('hello world, lorem ipsum, javascript is cool');
+// console.log(str.toUpperCase());
+// console.log(str1.toUpperCase());
+// console.log(str2.toUpperCase());
+// console.log(str3.toUpperCase());
 //===========================================================================================================
 // - Перевести до нижнього регістру настипні стрінгові значення
 // 'HELLO WORLD', 'LOREM IPSUM', 'JAVASCRIPT IS COOL'
+
+// let str = ('hello world');
+// let str1 = ('lorem ipsum');
+// let str2 = ('javascript is cool');
+// let str3 = ('hello world, lorem ipsum, javascript is cool');
+// console.log(str.toLowerCase());
+// console.log(str1.toLowerCase());
+// console.log(str2.toLowerCase());
+// console.log(str3.toLowerCase());
 //===========================================================================================================
 // - Є "брудна" стрінга let str = ' dirty string   ' . Почистити її від зайвих пробілів.
 //
@@ -15,6 +43,10 @@
 // - Напишіть функцію stringToarray(str), яка перетворює рядок на масив слів.
 //     let str = 'Ревуть воли як ясла повні';
 // let arr = stringToarray(str); ['Ревуть', 'воли', 'як', 'ясла', 'повні']
+
+// let str = 'Ревуть воли як ясла повні';
+// let arr = str.split(' ');
+// console.log(arr);
 //
 //===========================================================================================================
 //
